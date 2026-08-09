@@ -1,10 +1,12 @@
 [
   {
-    "date": "Febrero 2026 - Actualidad",
-    "title": "Analista de Calidad de Datos para IA",
+    "dateEs": "Febrero 2026 - Actualidad",
+    "dateEn": "February 2026 - Present",
+    "titleEs": "Analista de Calidad de Datos para IA",
+    "titleEn": "AI Data Quality Analyst",
     "company": "Meridial / Crowdgen",
-    "description": "Evalué y corregí datos utilizados para entrenar modelos de inteligencia artificial, estudiando guías técnicas y aplicando estándares de calidad estrictos en cada proyecto. Dependiendo de la tarea, tuve que aprender distintos lenguajes de programación sobre la marcha - un proceso que despertó en mi interés real por los datos y sentó las bases para el trabajo analítico que hago hoy en PostgreSQL y Power BI.",
+    "descriptionEs": "Evalué y corregí datos utilizados para entrenar modelos de inteligencia artificial, estudiando guías técnicas y aplicando estándares de calidad estrictos en cada proyecto. Dependiendo de la tarea, tuve que aprender distintos lenguajes de programación sobre la marcha - un proceso que despertó en mi interés real por los datos y sentó las bases para el trabajo analítico que hago hoy en PostgreSQL y Power BI.",
+    "descriptionEn": "I evaluated and corrected data used to train AI models, studying technical guidelines and applying strict quality standards on every project. Depending on the task, I had to pick up different programming languages on the fly - a process that sparked my real interest in data and laid the foundation for the analytical work I do today in PostgreSQL and Power BI.",
     "current": true
   }
-  
 ]

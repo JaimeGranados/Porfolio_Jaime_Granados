@@ -94,6 +94,34 @@ const jsonLd = {
     <Header />
     <slot />
     <Footer />
+    <script>
+      document.addEventListener("astro:page-load", () => {
+        const btn = document.getElementById("lang-toggle")
+        if (!btn) return
+
+        const applyLang = (lang: string) => {
+          document.querySelectorAll("[data-es][data-en]").forEach((el) => {
+            const text = lang === "en" ? el.getAttribute("data-en") : el.getAttribute("data-es")
+            if (text !== null) el.textContent = text
+          })
+          document.querySelectorAll("[data-lang]").forEach((el) => {
+            const htmlEl = el as HTMLElement
+            htmlEl.style.display = htmlEl.getAttribute("data-lang") === lang ? "" : "none"
+          })
+          btn.textContent = lang === "en" ? "ES" : "EN"
+          document.documentElement.lang = lang
+          localStorage.setItem("lang", lang)
+        }
+
+        const saved = localStorage.getItem("lang") || "es"
+        applyLang(saved)
+
+        btn.addEventListener("click", () => {
+          const current = localStorage.getItem("lang") || "es"
+          applyLang(current === "es" ? "en" : "es")
+        })
+      })
+    </script>
     <style is:global>
       :root {
         color-scheme: light dark;
